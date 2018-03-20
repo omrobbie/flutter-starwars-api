@@ -38,7 +38,7 @@ class _StarWarsDataState extends State<StarWarsData> {
     return Scaffold(
       appBar: AppBar(
         title: Text('Star Wars Starships'),
-        backgroundColor: Colors.yellow,
+        backgroundColor: Colors.blueAccent,
       ),
       body: ListView.builder(
         itemCount: data == null ? 0 : data.length,
@@ -84,6 +84,6 @@ class _StarWarsDataState extends State<StarWarsData> {
   @override
   void initState() {
     super.initState();
-    //this.getSwData();
+    this.getSwData();
   }
 }
